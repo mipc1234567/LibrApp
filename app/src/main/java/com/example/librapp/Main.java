@@ -1,5 +1,6 @@
 package com.example.librapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -27,5 +28,12 @@ public class Main extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+    }
+    //Metodo para el boton volver
+    public void volver_sesion(View view){
+        Intent volver = new  Intent(this,MainActivity.class);
+        startActivity(volver);
     }
 }
