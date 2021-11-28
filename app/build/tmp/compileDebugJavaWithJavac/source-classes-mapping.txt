@@ -1,0 +1,13 @@
+com/example/librapp/BuildConfig.java
+ com.example.librapp.BuildConfig
+com/example/librapp/MainActivity.java
+ com.example.librapp.MainActivity
+com/example/librapp/FirstFragment.java
+ com.example.librapp.FirstFragment
+ com.example.librapp.FirstFragment$1
+com/example/librapp/SecondFragment.java
+ com.example.librapp.SecondFragment
+ com.example.librapp.SecondFragment$1
+com/example/librapp/Main.java
+ com.example.librapp.Main
+ com.example.librapp.Main$1

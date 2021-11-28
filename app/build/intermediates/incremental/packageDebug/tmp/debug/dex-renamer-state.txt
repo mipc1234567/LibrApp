@@ -1,0 +1,4 @@
+#Sun Nov 28 12:09:36 COT 2021
+base.0=C\:\\sdk_studio\\LibrAPP\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
