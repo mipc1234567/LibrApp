@@ -14,5 +14,12 @@
     <string name="tv1">Primer Activity</string>
 
     <string name="volver">Volver</string>
-    <string name="tv2">Primer Activity</string>
+    <string name="tv2">Segund Activity</string>
+
+
+    <string name="buscar_libro">Volver</string>
+    <string name="tv3">Tercer Activity</string>
+
+    <string name="volver_busqueda_menu">Volver</string>
+    <string name="tv4">Tercer Activity</string>
 </resources>

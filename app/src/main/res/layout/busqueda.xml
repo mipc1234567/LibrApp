@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:onClick="volver_buscar"
+    tools:context=".Busqueda">
+
+    <Button
+        android:id="@+id/MenuButton"
+        android:layout_width="257dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Menu"
+        app:backgroundTint="#FF5516"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitulotextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp"
+        android:text="Ayuda ?"
+        android:textColor="#3F51B5"
+        android:textSize="9sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#FF5516"
+        android:text="Agregar"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2" />
+
+    <ImageButton
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="#F4F2F3"
+        android:contentDescription="@string/volver_busqueda_menu"
+        android:onClick="volver_buscar"
+        android:tint="#0C0004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FDFBFB"
+        android:rotation="182"
+        android:tint="#050000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <RadioButton
+        android:id="@+id/radioButton9"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="35dp"
+        android:buttonTint="#120101"
+        android:checked="false"
+        android:text="Historia "
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2" />
+
+    <RadioButton
+        android:id="@+id/radioButton8"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:buttonTint="#120101"
+        android:checked="true"
+        android:text="Filosofía"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2" />
+
+    <RadioButton
+        android:id="@+id/radioButton10"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="35dp"
+        android:buttonTint="#120101"
+        android:checked="false"
+        android:text="Matemáticas"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2" />
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="13dp"
+        android:buttonTint="#120101"
+        android:checked="false"
+        android:text="Artes"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="13dp"
+        android:buttonTint="#120101"
+        android:checked="false"
+        android:text="Tecnología"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:buttonTint="#120101"
+        android:checked="true"
+        android:text="Literatura"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#120101"
+        android:checked="true"
+        android:text="Autor"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#120101"
+        android:checked="false"
+        android:text="Editorial"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="89dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="12dp"
+        android:buttonTint="#120101"
+        android:checked="false"
+        android:text="Lengua"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="239dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:baselineAligned="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filtrarpor2"
+        app:layout_constraintVertical_bias="0.526"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/filtrarpor2"
+        android:layout_width="109dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="287dp"
+        android:text="Filtrar por Tema:"
+        android:textColor="#FF5516"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContenedortextView"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <TextView
+        android:id="@+id/filtrarpor"
+        android:layout_width="109dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="287dp"
+        android:text="Filtrar por:"
+        android:textColor="#FF5516"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContenedortextView"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <TextView
+        android:id="@+id/TitulotextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicacion Reserva de Libro"
+        android:textColor="#FF5516"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/IdUsuariotextView"
+        android:layout_width="108dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginRight="324dp"
+        android:layout_marginBottom="631dp"
+        android:text="Id Usuario:"
+        android:textColor="#FF5516"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+        android:id="@+id/TituloCentraltextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="512dp"
+        android:text="LibrApp"
+        android:textColor="#FF5722"
+        android:textColorLink="#FF5722"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ContenedortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="283dp"
+        android:text="Busquedas"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloCentraltextView"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/NombreLibro"
+        android:layout_width="109dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="287dp"
+        android:text="Nombre Libro"
+        android:textColor="#FF5516"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContenedortextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="165dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Ingrese el nombre del libro"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/NombreLibro"
+        app:layout_constraintTop_toBottomOf="@+id/ContenedortextView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Resultado:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:text="Titulo:"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Nombre del Libro"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="45dp"
+        android:text="Descripción del Libro"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="45dp"
+        android:text="Descripción:"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="78dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="78dp"
+        android:text="Cantidad: "
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="98dp"
+        android:text="Estado: "
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="98dp"
+        android:text="Disponible"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
