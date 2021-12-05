@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:onClick="volver_buscar"
-    tools:context=".Busqueda">
-
+    tools:context=".Buscar">
     <Button
         android:id="@+id/MenuButton"
         android:layout_width="257dp"
@@ -56,22 +53,26 @@
         android:id="@+id/atras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="110dp"
+        android:layout_marginEnd="69dp"
         android:backgroundTint="#F4F2F3"
-        android:contentDescription="@string/volver_busqueda_menu"
+        android:contentDescription="@string/buscar"
         android:onClick="volver_buscar"
         android:tint="#0C0004"
+        app:layout_constraintBottom_toTopOf="@+id/NombreLibro"
+        app:layout_constraintEnd_toStartOf="@+id/TituloCentraltextView"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096"
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="28dp"
         android:backgroundTint="#FDFBFB"
         android:rotation="182"
         android:tint="#050000"
@@ -434,5 +435,4 @@
         android:text="Disponible"
         app:layout_constraintStart_toStartOf="@+id/tableLayout2"
         app:layout_constraintTop_toTopOf="@+id/tableLayout2" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

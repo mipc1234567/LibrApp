@@ -20,6 +20,6 @@
     <string name="buscar_libro">Volver</string>
     <string name="tv3">Tercer Activity</string>
 
-    <string name="volver_busqueda_menu">Volver</string>
-    <string name="tv4">Tercer Activity</string>
+    <string name="buscar">Volver</string>
+    <string name="tv5">Tercer Activity</string>
 </resources>

@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LibrAPP">
+        <activity android:name=".Buscar"></activity>
         <activity
             android:name=".Main"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.LibrAPP.NoActionBar"></activity>
+            android:theme="@style/Theme.LibrAPP.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -19,13 +19,15 @@ public class MainActivity extends AppCompatActivity {
     }
     //Metodo para el boton Cerrar Sesion
     public void cerrar_sesion(View view){
-        Intent cerrar = new  Intent(this,Main.class);
+        Intent cerrar;
+        cerrar = new  Intent(this,Main.class);
         startActivity(cerrar);
     }
 
     //Metodo para el boton Buscar_Sesion
     public void buscar(View view2){
-        Intent buscar = new  Intent(this,Busqueda.class);
+        Intent buscar;
+        buscar = new  Intent(this,Buscar.class);
         startActivity(buscar);
     }
 

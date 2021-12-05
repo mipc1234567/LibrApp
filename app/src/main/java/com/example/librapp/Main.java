@@ -26,6 +26,7 @@ public class Main extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
 
@@ -33,7 +34,8 @@ public class Main extends AppCompatActivity {
     }
     //Metodo para el boton volver
     public void volver_sesion(View view){
-        Intent volver = new  Intent(this,MainActivity.class);
+        Intent volver;
+        volver = new  Intent(this,MainActivity.class);
         startActivity(volver);
     }
 }
