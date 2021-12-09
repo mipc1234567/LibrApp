@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587185737573",
+    "project_id": "fir-experimento-mateo",
+    "storage_bucket": "fir-experimento-mateo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587185737573:android:d9562f4ebb4e6677279b8c",
+        "android_client_info": {
+          "package_name": "com.example.librapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587185737573-jmlol0ivij60sgc2km276cq9hpepn8pe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBic_KWQcMSyASwpP4GglLpEh5zuNgKmXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587185737573-jmlol0ivij60sgc2km276cq9hpepn8pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F7"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/ButtonRegistrarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="38dp"
+        android:background="#FF5722"
+        android:backgroundTint="#FF5722"
+        android:text="@string/registrese"
+        android:textColor="#050505"
+        app:iconTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/ButtonIngresarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FF5722"
+        android:backgroundTint="#FF5722"
+        android:onClick="MenuPrincipal"
+        android:text="Ingresar"
+        android:textColor="#10100F"
+        app:iconTint="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
+        app:rippleColor="#FF5722" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonIngresarLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="38dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textWebEditText|textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="45dp"
+        android:text="Aplicacion Reserva de Libro"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="sans-serif"
+        android:text="LibrApp"
+        android:textColor="#FF5722"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="44dp"
+        android:text="Ingreso"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="261dp"
+        android:text="Usuario"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginBottom="14dp"
+        android:text="Contraseña"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="35dp"
+        android:text="¿Aun no tienes Cuenta? registrate aqui"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonRegistrarLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonIngresarLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

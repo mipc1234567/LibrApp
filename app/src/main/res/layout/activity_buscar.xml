@@ -5,18 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Buscar">
+
     <Button
         android:id="@+id/MenuButton"
         android:layout_width="257dp"
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="192dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text="Menu"
-        app:backgroundTint="#FF5516"
+        app:backgroundTint="#FF5722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -209,10 +208,10 @@
         android:baselineAligned="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/filtrarpor2"
-        app:layout_constraintVertical_bias="0.526"
+        app:layout_constraintVertical_bias="0.531"
         tools:visibility="visible" />
 
     <TextView
