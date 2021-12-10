@@ -43,6 +43,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-firestore'
-    compile 'com.basgeekball:awesome-validation:2.0'
+    implementation 'com.basgeekball:awesome-validation:4.3'
 
 }
