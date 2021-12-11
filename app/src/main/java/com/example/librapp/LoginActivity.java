@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseAuthWebException;
 
+
 public class LoginActivity extends AppCompatActivity {
 private Button IngresarLogin;
 private Button RegistrarseLogin;
@@ -58,7 +59,7 @@ AwesomeValidation awesomeValidation;
                                         finish();
                                             MenuPrincipal(v);
                                         }else{
-                                          String errorcode=((FirebaseAuthWebException) task.getException()).getErrorCode().toString();
+                                          String errorcode=((FirebaseAuthException)task.getException()).getErrorCode();
                                           dameToastdeerror(errorcode);
 
                                         }
@@ -97,7 +98,7 @@ AwesomeValidation awesomeValidation;
                                 finish();
                                 MenuPrincipal(v);
                             }else{
-                                 String errorcode=((FirebaseAuthException) task.getException()).getErrorCode();
+                                 String errorcode=((FirebaseAuthException)task.getException()).getErrorCode();
                                 dameToastdeerror(errorcode);
 
                             }

@@ -4,10 +4,12 @@
       <w>buscar</w>
       <w>busqueda</w>
       <w>cerrar</w>
+      <w>eliminar</w>
       <w>proveedor</w>
       <w>sesion</w>
       <w>volver</w>
       <w>volverbuscar</w>
+      <w>volvermain</w>
     </words>
   </dictionary>
 </component>

@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LibrAPP">
+        <activity android:name=".Devolver"></activity>
+        <activity android:name=".Menu" />
         <activity android:name=".LoginActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +23,7 @@
             android:name=".Main"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.LibrAPP.NoActionBar" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

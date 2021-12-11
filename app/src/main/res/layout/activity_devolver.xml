@@ -2,11 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".Eliminar">
+    tools:context=".Devolver">
 
     <Button
         android:id="@+id/MenuButton"
@@ -26,50 +25,62 @@
         app:layout_constraintTop_toBottomOf="@+id/TitulotextView"
         app:layout_constraintVertical_bias="0.947" />
 
-    <Button
-        android:id="@+id/MenuPrincipalButton"
-        android:layout_width="101dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="346dp"
-        android:onClick="Menú Principal"
-        android:text="@string/cerrar_sesion"
-        android:textSize="10sp"
-        app:backgroundTint="#FF5516"
-        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/NumberUserTextView"
-        app:layout_constraintTop_toBottomOf="@+id/TitulotextView"
-        app:layout_constraintVertical_bias="0.081" />
-
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="102dp"
         android:layout_height="19dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
         android:text="Eliminar"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="370dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="100dp"
         android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="240dp"
         android:text="Eliminar"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="389dp" />
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="99dp"
         android:layout_height="19dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
         android:text="Eliminar"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="69dp"
+        android:backgroundTint="#F4F2F3"
+        android:contentDescription="@string/buscar"
+        android:onClick="volver_sesion"
+        android:tint="#0C0004"
+        app:layout_constraintBottom_toTopOf="@+id/NombreLibro"
+        app:layout_constraintEnd_toStartOf="@+id/TituloCentraltextView"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -266,13 +277,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ContenedortextView"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="351dp" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

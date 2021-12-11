@@ -24,8 +24,10 @@
     <string name="tv5">Tercer Activity</string>
 
     //elementos de Firebase Ingreso Usuario
-        <string name="invalid_mail">Ingrese el mail valido</string>
-        <string name="invalid_password"> Ingrese un password mas seguro</string>
+    <string name="invalid_mail">Ingrese el mail valido</string>
+    <string name="invalid_password"> Ingrese un password mas seguro</string>
     <string name="registrese">Registrese</string>
+
+    <string name="eliminar_libro">Registrese</string>
 
 </resources>
