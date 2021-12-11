@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Eliminar">
+
+    <Button
+        android:id="@+id/MenuButton"
+        android:layout_width="257dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Eliminar"
+        app:backgroundTint="#FF5516"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitulotextView"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <Button
+        android:id="@+id/MenuPrincipalButton"
+        android:layout_width="101dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="346dp"
+        android:onClick="Menú Principal"
+        android:text="@string/cerrar_sesion"
+        android:textSize="10sp"
+        app:backgroundTint="#FF5516"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/NumberUserTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TitulotextView"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="102dp"
+        android:layout_height="19dp"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="99dp"
+        android:layout_height="19dp"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="280dp"
+        android:layout_height="314dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="126dp"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubtitulotextView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TableTitleTextView"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:text="Titulo" />
+
+            <TextView
+                android:id="@+id/TableDecriptionTextView"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="Descripcion" />
+
+            <TextView
+                android:id="@+id/TableCantTextView"
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:text="Cantidad" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TitulotextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicación Reserva de Libro"
+        android:textColor="#FF5516"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/IdUsuariotextView"
+        android:layout_width="95dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="324dp"
+        android:layout_marginRight="324dp"
+        android:layout_marginBottom="631dp"
+        android:text="Id Usuario:"
+        android:textColor="#FF5516"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+        android:id="@+id/NumberUserTextView"
+        android:layout_width="126dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="364dp"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/IdUsuariotextView"
+        app:layout_constraintTop_toBottomOf="@+id/TitulotextView"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/TituloCentraltextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginRight="177dp"
+        android:layout_marginBottom="308dp"
+        android:text="LibrApp"
+        android:textColor="#FF5722"
+        android:textColorLink="#FF5722"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumberUserTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ContenedortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:layout_marginBottom="283dp"
+        android:text="Devolución Libro"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloCentraltextView"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/SubtitulotextView"
+        android:layout_width="109dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="287dp"
+        android:text="Listado de Libros"
+        android:textColor="#FF5516"
+        app:layout_constraintBottom_toTopOf="@+id/MenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContenedortextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
